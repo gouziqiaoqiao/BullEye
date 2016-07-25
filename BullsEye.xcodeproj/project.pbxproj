@@ -12,6 +12,9 @@
 		DA29D2BD1D45FA1400F21726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA29D2BB1D45FA1400F21726 /* Main.storyboard */; };
 		DA29D2BF1D45FA1400F21726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA29D2BE1D45FA1400F21726 /* Assets.xcassets */; };
 		DA29D2C21D45FA1400F21726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA29D2C01D45FA1400F21726 /* LaunchScreen.storyboard */; };
+		DA29D2CA1D45FB3500F21726 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = DA29D2C91D45FB3500F21726 /* BullsEye.html */; };
+		DA29D2CE1D45FB3E00F21726 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA29D2CC1D45FB3E00F21726 /* Default-568h@2x.png */; };
+		DA29D2CF1D45FB3E00F21726 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA29D2CD1D45FB3E00F21726 /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		DA29D2BE1D45FA1400F21726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA29D2C11D45FA1400F21726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA29D2C31D45FA1400F21726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA29D2C91D45FB3500F21726 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
+		DA29D2CC1D45FB3E00F21726 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DA29D2CD1D45FB3E00F21726 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 		DA29D2B61D45FA1400F21726 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				DA29D2CB1D45FB3E00F21726 /* Launch Images */,
+				DA29D2C91D45FB3500F21726 /* BullsEye.html */,
 				DA29D2B71D45FA1400F21726 /* AppDelegate.swift */,
 				DA29D2B91D45FA1400F21726 /* ViewController.swift */,
 				DA29D2BB1D45FA1400F21726 /* Main.storyboard */,
@@ -62,6 +70,15 @@
 				DA29D2C31D45FA1400F21726 /* Info.plist */,
 			);
 			path = BullsEye;
+			sourceTree = "<group>";
+		};
+		DA29D2CB1D45FB3E00F21726 /* Launch Images */ = {
+			isa = PBXGroup;
+			children = (
+				DA29D2CC1D45FB3E00F21726 /* Default-568h@2x.png */,
+				DA29D2CD1D45FB3E00F21726 /* Default@2x.png */,
+			);
+			path = "Launch Images";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +139,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA29D2CF1D45FB3E00F21726 /* Default@2x.png in Resources */,
 				DA29D2C21D45FA1400F21726 /* LaunchScreen.storyboard in Resources */,
+				DA29D2CA1D45FB3500F21726 /* BullsEye.html in Resources */,
 				DA29D2BF1D45FA1400F21726 /* Assets.xcassets in Resources */,
+				DA29D2CE1D45FB3E00F21726 /* Default-568h@2x.png in Resources */,
 				DA29D2BD1D45FA1400F21726 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
