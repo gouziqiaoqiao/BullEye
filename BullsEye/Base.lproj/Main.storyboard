@@ -74,6 +74,7 @@
                                         <state key="normal" title="Button" image="InfoButton" backgroundImage="SmallButton"/>
                                         <connections>
                                             <action selector="helpAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aGg-gY-4NU"/>
+                                            <segue destination="bas-9D-PZb" kind="presentation" modalTransitionStyle="flipHorizontal" id="Tab-Rq-4wD"/>
                                         </connections>
                                     </button>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1mV-3L-reJ">
@@ -82,6 +83,12 @@
                                             <constraint firstAttribute="width" constant="400" id="bBn-qd-Jpg"/>
                                         </constraints>
                                     </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Round:999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQB-3h-ehF">
+                                        <rect key="frame" x="441" y="294" width="86" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4y-k3-UFp">
                                         <rect key="frame" x="284" y="120" width="100" height="37"/>
                                         <constraints>
@@ -94,12 +101,6 @@
                                             <action selector="hitMeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OA2-w1-mhy"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Round:999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQB-3h-ehF">
-                                        <rect key="frame" x="441" y="294" width="86" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -152,7 +153,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="231.5" y="208.5"/>
+            <point key="canvasLocation" x="-15.5" y="215.5"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="fgd-WI-Tuv">
+            <objects>
+                <viewController id="bas-9D-PZb" customClass="AboutViewController" customModule="BullsEye" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cjd-MU-0ZY"/>
+                        <viewControllerLayoutGuide type="bottom" id="ICW-uZ-VT8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MyG-Xm-EOH">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="aBu-Mz-4sS">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivK-6I-jbx">
+                                <rect key="frame" x="308" y="318" width="50" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="ZeI-SC-v03"/>
+                                </constraints>
+                                <state key="normal" title="close" backgroundImage="Button-Normal"/>
+                                <connections>
+                                    <action selector="closeAction:" destination="bas-9D-PZb" eventType="touchUpInside" id="JAg-Cf-rLy"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mI8-bZ-as5">
+                                <rect key="frame" x="8" y="8" width="651" height="294"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="aBu-Mz-4sS" secondAttribute="bottom" id="4K9-Ko-ww5"/>
+                            <constraint firstItem="aBu-Mz-4sS" firstAttribute="top" secondItem="MyG-Xm-EOH" secondAttribute="top" id="7yo-fW-d0d"/>
+                            <constraint firstAttribute="trailing" secondItem="aBu-Mz-4sS" secondAttribute="trailing" id="LBu-LV-cEz"/>
+                            <constraint firstAttribute="trailing" secondItem="mI8-bZ-as5" secondAttribute="trailing" constant="8" id="NsL-H9-ce4"/>
+                            <constraint firstItem="ivK-6I-jbx" firstAttribute="centerX" secondItem="MyG-Xm-EOH" secondAttribute="centerX" id="ZYn-vV-Ndv"/>
+                            <constraint firstItem="mI8-bZ-as5" firstAttribute="top" secondItem="MyG-Xm-EOH" secondAttribute="topMargin" constant="8" id="gHp-7j-lmp"/>
+                            <constraint firstItem="aBu-Mz-4sS" firstAttribute="leading" secondItem="MyG-Xm-EOH" secondAttribute="leading" id="gh1-xV-tjl"/>
+                            <constraint firstItem="mI8-bZ-as5" firstAttribute="leading" secondItem="MyG-Xm-EOH" secondAttribute="leading" constant="8" id="mga-23-X77"/>
+                            <constraint firstItem="ICW-uZ-VT8" firstAttribute="top" secondItem="ivK-6I-jbx" secondAttribute="bottom" constant="20" id="nRr-gq-3DC"/>
+                            <constraint firstItem="ivK-6I-jbx" firstAttribute="top" secondItem="mI8-bZ-as5" secondAttribute="bottom" constant="16" id="xZn-Z4-rAo"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="webView" destination="mI8-bZ-as5" id="6Gi-aF-Hti"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iiy-3c-nYC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-89.5" y="808.5"/>
         </scene>
     </scenes>
     <resources>
